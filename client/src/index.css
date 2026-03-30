@@ -150,6 +150,14 @@ svg {
   background: rgba(255, 255, 255, 0.06);
 }
 
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid rgba(124, 231, 196, 0.9);
+  outline-offset: 3px;
+}
+
 .eyebrow {
   margin: 0 0 0.4rem;
   color: var(--accent);
