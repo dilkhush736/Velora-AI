@@ -25,7 +25,7 @@ const buildChatPreview = (content = "") => {
     : preview;
 };
 
-const getChatTitle = (chat) => chat?.title?.trim() || DEFAULT_CHAT_TITLE;
+const getChatTitle = (chat) => normalizeText(chat?.title) || DEFAULT_CHAT_TITLE;
 
 const getChatMessages = (chat) => (Array.isArray(chat?.messages) ? chat.messages : []);
 
@@ -97,7 +97,7 @@ export const getChats = asyncHandler(async (req, res) => {
 });
 
 export const createChat = asyncHandler(async (req, res) => {
-  const requestedTitle = req.body?.title?.trim();
+  const requestedTitle = normalizeText(req.body?.title);
 
   const chat = await Chat.create({
     user: req.user._id,
