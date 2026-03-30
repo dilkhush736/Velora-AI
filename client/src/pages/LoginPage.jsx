@@ -29,7 +29,10 @@ export default function LoginPage() {
     setIsSubmitting(true);
 
     try {
-      await login(form);
+      await login({
+        ...form,
+        email: form.email.trim(),
+      });
       navigate("/app", { replace: true });
     } catch (requestError) {
       setError(getApiErrorMessage(requestError, "Unable to sign in."));
