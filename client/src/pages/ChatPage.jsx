@@ -319,6 +319,7 @@ export default function ChatPage() {
         activeChatId={activeChatId}
         isOpen={sidebarOpen}
         isCreatingChat={isCreatingChat}
+        isLoadingConversation={isLoadingConversation}
         onClose={() => setSidebarOpen(false)}
         onDeleteChat={handleDeleteChat}
         onLogout={handleLogout}

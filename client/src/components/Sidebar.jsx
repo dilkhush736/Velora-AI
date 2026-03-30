@@ -9,6 +9,7 @@ export default function Sidebar({
   activeChatId,
   isOpen,
   isCreatingChat,
+  isLoadingConversation,
   onClose,
   onDeleteChat,
   onLogout,
@@ -70,6 +71,7 @@ export default function Sidebar({
             ) : (
               chatItems.map((chat) => {
                 const chatTitle = chat?.title || "New conversation";
+                const isActiveChatLoading = chat.id === activeChatId && isLoadingConversation;
 
                 return (
                   <div
@@ -79,6 +81,7 @@ export default function Sidebar({
                     <button
                       className="chat-list-item"
                       onClick={() => onSelectChat(chat.id)}
+                      disabled={isActiveChatLoading}
                       type="button"
                     >
                       <div className="chat-list-item-top">
