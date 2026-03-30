@@ -71,6 +71,8 @@ export default function Sidebar({
             ) : (
               chatItems.map((chat) => {
                 const chatTitle = chat?.title || "New conversation";
+                const chatPreview =
+                  chat.preview || "Fresh conversation, waiting for the first message.";
                 const isActiveChatLoading = chat.id === activeChatId && isLoadingConversation;
 
                 return (
@@ -85,10 +87,10 @@ export default function Sidebar({
                       type="button"
                     >
                       <div className="chat-list-item-top">
-                        <strong>{chatTitle}</strong>
+                        <strong title={chatTitle}>{chatTitle}</strong>
                         <span>{formatChatTimestamp(chat.lastMessageAt || chat.updatedAt)}</span>
                       </div>
-                      <p>{chat.preview || "Fresh conversation, waiting for the first message."}</p>
+                      <p title={chatPreview}>{chatPreview}</p>
                     </button>
 
                     <button
