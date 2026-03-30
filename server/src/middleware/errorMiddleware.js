@@ -21,6 +21,14 @@ export const errorHandler = (error, req, res, next) => {
     message = "The requested resource was not found.";
   }
 
+  if (error.name === "ValidationError") {
+    statusCode = 400;
+    message = Object.values(error.errors || {})
+      .map((item) => item.message)
+      .filter(Boolean)
+      .join(" ") || "The request data did not pass validation.";
+  }
+
   if (error.code === 11000) {
     statusCode = 409;
     message = "A record with that value already exists.";
