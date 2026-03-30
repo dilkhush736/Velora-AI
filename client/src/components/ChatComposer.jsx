@@ -19,6 +19,14 @@ export default function ChatComposer({
     textareaRef.current.style.height = `${Math.min(textareaRef.current.scrollHeight, 180)}px`;
   }, [value]);
 
+  useEffect(() => {
+    if (disabled || !textareaRef.current) {
+      return;
+    }
+
+    textareaRef.current.focus();
+  }, [disabled]);
+
   const handleSubmit = () => {
     if (disabled || !value.trim()) {
       return;
