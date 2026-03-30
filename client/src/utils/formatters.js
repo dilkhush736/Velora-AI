@@ -4,6 +4,11 @@ export const formatChatTimestamp = (value) => {
   }
 
   const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    return "";
+  }
+
   const now = new Date();
   const isToday = date.toDateString() === now.toDateString();
   const isThisWeek = now.getTime() - date.getTime() < 6 * 24 * 60 * 60 * 1000;
@@ -32,9 +37,14 @@ export const formatMessageTimestamp = (value) => {
     return "";
   }
 
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    return "";
+  }
+
   return new Intl.DateTimeFormat(undefined, {
     hour: "numeric",
     minute: "2-digit",
-  }).format(new Date(value));
+  }).format(date);
 };
-
