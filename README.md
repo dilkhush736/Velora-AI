@@ -132,3 +132,4 @@ The production files are written to `client/dist`.
 - Logout is implemented as client-side token removal with a server acknowledgement endpoint, which is typical for stateless JWT flows.
 - The client uses `VITE_API_BASE_URL` and also includes a Vite `/api` proxy for local development.
 - The backend uses the OpenAI Responses API and stores conversation history in MongoDB.
+- When `OPENAI_API_KEY` is missing or the provider is temporarily unavailable, the server falls back to its built-in demo assistant responses.
