@@ -169,6 +169,18 @@ const TOPIC_LIBRARY = [
     example: "`app.get('/api/users', handler)` creates a route that returns user data.",
   },
   {
+    key: "ejs",
+    aliases: ["ejs", "embedded javascript templates"],
+    summary:
+      "EJS is a templating engine that lets you generate HTML pages with JavaScript values on the server.",
+    points: [
+      "It is commonly used with Express to render dynamic pages.",
+      "You can insert values with tags like `<%= user.name %>`.",
+      "It is useful when the server needs to build HTML before sending it to the browser.",
+    ],
+    example: "`res.render('profile', { user })` can render a profile page with user data.",
+  },
+  {
     key: "mongodb",
     aliases: ["mongodb", "mongo", "mongoose"],
     summary:
@@ -491,7 +503,15 @@ const detectTopic = (text = "") => {
 const detectComparisonTopics = (message = "") => {
   const lowerMessage = toLower(message);
   const matchedTopics = TOPIC_LIBRARY.filter((topic) =>
-    topic.aliases.some((alias) => lowerMessage.includes(alias))
+    topic.aliases.some((alias) => {
+      const aliasPattern = alias.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+      if (alias.length < 3) {
+        return new RegExp(`(?<![\\w.])${aliasPattern}(?!\\w)`, "i").test(lowerMessage);
+      }
+
+      return new RegExp(`\\b${aliasPattern}\\b`, "i").test(lowerMessage);
+    })
   );
 
   if (matchedTopics.length < 2) {
@@ -514,7 +534,9 @@ const isSummaryRequest = (message = "") =>
   /\b(summarize|summarise|summary of|tl;dr|shorten this|brief this)\b/i.test(message);
 
 const isWritingRequest = (message = "") =>
-  /\b(write|draft|rephrase|rewrite|improve this|professional message|email|resume|cover letter|application)\b/i.test(
+  (/\b(write|draft)\b/i.test(message) &&
+    /\b(email|message|letter|resume|cover letter|application|essay|paragraph)\b/i.test(message)) ||
+  /\b(rephrase|rewrite|improve this|professional message|email|resume|cover letter|application)\b/i.test(
     message
   );
 
@@ -539,7 +561,7 @@ const isStudyRequest = (message = "") =>
   );
 
 const isCodingRequest = (message = "") =>
-  /\b(code|coding|program|function|script|algorithm|react|node|express|mongodb|html|css|javascript|js|mern|api)\b/i.test(
+  /\b(code|coding|program|function|script|algorithm|react|node|express|mongodb|html|css|javascript|js|mern|api|ejs)\b/i.test(
     message
   );
 
@@ -851,6 +873,7 @@ const detectIntent = (context) => {
       topic?.key === "react" ||
       topic?.key === "node" ||
       topic?.key === "express" ||
+      topic?.key === "ejs" ||
       topic?.key === "mongodb" ||
       topic?.key === "mern"
       ? "web_dev"
@@ -1148,6 +1171,17 @@ const buildSimpleCodeExample = (topic) => {
       "});",
       "",
       "app.listen(5000);",
+      "```",
+    ].join("\n");
+  }
+
+  if (topic.key === "ejs") {
+    return [
+      "Example:",
+      "",
+      "```ejs",
+      "<h1>Welcome, <%= user.name %></h1>",
+      "<p>Your role is <%= user.role %>.</p>",
       "```",
     ].join("\n");
   }
