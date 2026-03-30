@@ -26,7 +26,13 @@ function CodeBlock({ children, className }) {
     <div className="code-block">
       <div className="code-block-toolbar">
         <span>{language}</span>
-        <button className="ghost-icon-button" onClick={handleCopy} type="button">
+        <button
+          className="ghost-icon-button"
+          onClick={handleCopy}
+          type="button"
+          aria-label={copied ? "Code copied" : `Copy ${language} code`}
+          title={copied ? "Code copied" : `Copy ${language} code`}
+        >
           {copied ? <Check size={15} /> : <Copy size={15} />}
           {copied ? "Copied" : "Copy"}
         </button>
