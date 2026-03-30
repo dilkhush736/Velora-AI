@@ -1,4 +1,5 @@
 import { resolveLocalKnowledgeReply } from "./localKnowledge.js";
+import { evaluateSmartMath } from "./mathAssistant.js";
 
 const STOP_WORDS = new Set([
   "a",
@@ -557,6 +558,18 @@ const isMathRequest = (message = "") => {
   return /^\s*[-+()0-9/*x÷^%. ]+\s*$/.test(normalizeText(message));
 };
 
+const isEnhancedMathRequest = (message = "") =>
+  (/\d/.test(message) &&
+    /\b(average|sum|total|add|subtract|difference|multiply|product|divide|convert)\b/i.test(
+      message
+    )) ||
+  (/\d/.test(message) &&
+    /\b(to|in)\b/i.test(message) &&
+    /\b(km|kilometer|kilometers|m|meter|meters|cm|centimeter|centimeters|mm|millimeter|millimeters|kg|kilogram|kilograms|g|gram|grams|mg|milligram|milligrams|lb|lbs|pound|pounds|day|days|hour|hours|hr|hrs|minute|minutes|min|mins|second|seconds|sec|secs|celsius|fahrenheit|c|f)\b/i.test(
+      message
+    )) ||
+  isMathRequest(message);
+
 const asksForRealTimeData = (message = "") =>
   LIVE_DATA_PATTERNS.some((pattern) => pattern.test(message));
 
@@ -787,7 +800,7 @@ const detectIntent = (context) => {
     return "follow_up_transform";
   }
 
-  if (isMathRequest(message)) {
+  if (isEnhancedMathRequest(message)) {
     return "math";
   }
 
@@ -921,10 +934,10 @@ const generateFollowUpTransformReply = (context) => {
 };
 
 const generateMathReply = (context) => {
-  const solved = evaluateMath(context.message);
+  const solved = evaluateSmartMath(context.message) || evaluateMath(context.message);
 
   if (!solved) {
-    return "I can handle basic arithmetic and percentages in demo mode. Try something like `245 / 5`, `18% of 250`, or `(12 + 8) * 3`.";
+    return "I can handle arithmetic, percentages, averages, and basic unit conversions in demo mode. Try `245 / 5`, `18% of 250`, `average of 10 20 30`, or `5 km to m`.";
   }
 
   const result =
@@ -933,9 +946,9 @@ const generateMathReply = (context) => {
       : solved.result.toFixed(4).replace(/\.?0+$/, "");
 
   return [
-    `Result: **${result}**`,
+    `Result: **${solved.formattedResult || result}**`,
     "",
-    `Expression: \`${solved.expression}\``,
+    `Expression: \`${shortenText(solved.expression, 48)}\``,
   ].join("\n");
 };
 
