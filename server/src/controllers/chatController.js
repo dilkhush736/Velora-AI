@@ -8,10 +8,21 @@ import {
 import { asyncHandler } from "../utils/asyncHandler.js";
 
 const DEFAULT_CHAT_TITLE = "New conversation";
+const PREVIEW_MAX_LENGTH = 140;
+
+const normalizeText = (value = "") => value.replace(/\s+/g, " ").trim();
 
 const buildChatTitle = (content) => {
-  const trimmed = content.replace(/\s+/g, " ").trim();
+  const trimmed = normalizeText(content);
   return trimmed.length > 60 ? `${trimmed.slice(0, 57)}...` : trimmed;
+};
+
+const buildChatPreview = (content = "") => {
+  const preview = normalizeText(content);
+
+  return preview.length > PREVIEW_MAX_LENGTH
+    ? `${preview.slice(0, PREVIEW_MAX_LENGTH - 3).trimEnd()}...`
+    : preview;
 };
 
 const getChatTitle = (chat) => chat?.title?.trim() || DEFAULT_CHAT_TITLE;
@@ -45,7 +56,7 @@ const serializeChatSummary = (chat) => {
   return {
     id: chat._id.toString(),
     title: getChatTitle(chat),
-    preview: lastMessage?.content || "",
+    preview: buildChatPreview(lastMessage?.content || ""),
     lastMessageAt: chat.lastMessageAt || chat.updatedAt || chat.createdAt,
     updatedAt: chat.updatedAt,
     messagesCount: messages.length,
