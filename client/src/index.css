@@ -1003,6 +1003,17 @@ textarea:focus-visible {
   font-size: 0.84rem;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 @media (max-width: 1160px) {
   .auth-shell {
     grid-template-columns: minmax(0, 1fr);
