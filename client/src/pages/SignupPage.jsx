@@ -62,6 +62,8 @@ export default function SignupPage() {
             onChange={(event) => updateField("name", event.target.value)}
             placeholder="Your name"
             autoComplete="name"
+            minLength={2}
+            maxLength={60}
             required
           />
         </label>
