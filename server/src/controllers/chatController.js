@@ -1,3 +1,5 @@
+import mongoose from "mongoose";
+
 import Chat from "../models/Chat.js";
 import {
   generateAssistantReply,
@@ -51,6 +53,12 @@ const serializeChatSummary = (chat) => {
 };
 
 const getChatForUser = async (chatId, userId) => {
+  if (!mongoose.isValidObjectId(chatId)) {
+    const error = new Error("Invalid chat id.");
+    error.statusCode = 400;
+    throw error;
+  }
+
   const chat = await Chat.findOne({
     _id: chatId,
     user: userId,
