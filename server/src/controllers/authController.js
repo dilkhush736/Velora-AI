@@ -2,6 +2,9 @@ import User from "../models/User.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
 import { generateToken } from "../utils/generateToken.js";
 
+const normalizeName = (value = "") => value.replace(/\s+/g, " ").trim();
+const normalizeEmail = (value = "") => value.trim().toLowerCase();
+
 const sanitizeUser = (user) => ({
   id: user._id.toString(),
   name: user.name,
@@ -16,9 +19,9 @@ const buildAuthResponse = (user) => ({
 });
 
 export const signup = asyncHandler(async (req, res) => {
-  const name = req.body.name?.trim();
-  const email = req.body.email?.trim().toLowerCase();
-  const password = req.body.password?.trim();
+  const name = normalizeName(req.body.name);
+  const email = normalizeEmail(req.body.email);
+  const password = typeof req.body.password === "string" ? req.body.password : "";
 
   if (!name || !email || !password) {
     res.status(400);
@@ -47,8 +50,8 @@ export const signup = asyncHandler(async (req, res) => {
 });
 
 export const login = asyncHandler(async (req, res) => {
-  const email = req.body.email?.trim().toLowerCase();
-  const password = req.body.password?.trim();
+  const email = normalizeEmail(req.body.email);
+  const password = typeof req.body.password === "string" ? req.body.password : "";
 
   if (!email || !password) {
     res.status(400);
@@ -76,4 +79,3 @@ export const getCurrentUser = asyncHandler(async (req, res) => {
     user: sanitizeUser(req.user),
   });
 });
-
