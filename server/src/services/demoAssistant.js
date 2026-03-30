@@ -1,3 +1,5 @@
+import { resolveLocalKnowledgeReply } from "./localKnowledge.js";
+
 const STOP_WORDS = new Set([
   "a",
   "an",
@@ -1454,6 +1456,12 @@ const generateGeneralReply = (context) => {
 
 export const generateDemoReply = (message, chatHistory = []) => {
   const context = buildContext(message, chatHistory);
+  const localKnowledgeReply = resolveLocalKnowledgeReply(message);
+
+  if (localKnowledgeReply) {
+    return localKnowledgeReply;
+  }
+
   const intent = detectIntent(context);
 
   const generators = {
