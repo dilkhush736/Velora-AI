@@ -14,35 +14,35 @@ Velora is a full-stack AI chatbot web app built with a React + Vite client and a
 
 ```text
 chatGpt/
-├─ client/
-│  ├─ .env.example
-│  ├─ index.html
-│  ├─ package.json
-│  ├─ vite.config.js
-│  └─ src/
-│     ├─ api/
-│     ├─ components/
-│     ├─ context/
-│     ├─ hooks/
-│     ├─ pages/
-│     ├─ utils/
-│     ├─ App.jsx
-│     ├─ index.css
-│     └─ main.jsx
-├─ server/
-│  ├─ .env.example
-│  ├─ package.json
-│  └─ src/
-│     ├─ config/
-│     ├─ controllers/
-│     ├─ middleware/
-│     ├─ models/
-│     ├─ routes/
-│     ├─ services/
-│     ├─ utils/
-│     ├─ app.js
-│     └─ server.js
-└─ README.md
+|-- client/
+|   |-- .env.example
+|   |-- index.html
+|   |-- package.json
+|   |-- vite.config.js
+|   `-- src/
+|       |-- api/
+|       |-- components/
+|       |-- context/
+|       |-- hooks/
+|       |-- pages/
+|       |-- utils/
+|       |-- App.jsx
+|       |-- index.css
+|       `-- main.jsx
+|-- server/
+|   |-- .env.example
+|   |-- package.json
+|   `-- src/
+|       |-- config/
+|       |-- controllers/
+|       |-- middleware/
+|       |-- models/
+|       |-- routes/
+|       |-- services/
+|       |-- utils/
+|       |-- app.js
+|       `-- server.js
+`-- README.md
 ```
 
 ## Setup
