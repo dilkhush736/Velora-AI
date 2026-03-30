@@ -40,6 +40,10 @@ export default function ChatComposer({
           ref={textareaRef}
           className="composer-textarea"
           placeholder="Message Velora..."
+          aria-label="Type your message"
+          enterKeyHint="send"
+          autoComplete="off"
+          autoCapitalize="sentences"
           value={value}
           onChange={(event) => onChange(event.target.value)}
           onKeyDown={(event) => {
