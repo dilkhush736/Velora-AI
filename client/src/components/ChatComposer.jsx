@@ -29,7 +29,13 @@ export default function ChatComposer({
 
   return (
     <div className="composer-shell">
-      <div className="composer">
+      <form
+        className="composer"
+        onSubmit={(event) => {
+          event.preventDefault();
+          handleSubmit();
+        }}
+      >
         <textarea
           ref={textareaRef}
           className="composer-textarea"
@@ -48,14 +54,13 @@ export default function ChatComposer({
 
         <button
           className="primary-button composer-submit"
-          onClick={handleSubmit}
           disabled={disabled || !value.trim()}
-          type="button"
+          type="submit"
         >
           <SendHorizontal size={16} />
           {isSending ? "Thinking..." : "Send"}
         </button>
-      </div>
+      </form>
 
       <p className="composer-caption">
         Press Enter to send. Shift + Enter adds a new line.
@@ -63,4 +68,3 @@ export default function ChatComposer({
     </div>
   );
 }
-
