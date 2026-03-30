@@ -305,6 +305,11 @@ export default function ChatPage() {
   const activeMessages = Array.isArray(activeChat?.messages) ? activeChat.messages : [];
   const conversationTitle = activeChat?.title || DEFAULT_CHAT_TITLE;
   const userInitial = user?.name?.charAt(0)?.toUpperCase() || "Y";
+  const headerStatus = isLoadingChats || isLoadingConversation
+    ? "Loading"
+    : isResponding
+      ? "Responding"
+      : "Synced";
 
   return (
     <div className="app-shell">
@@ -326,6 +331,7 @@ export default function ChatPage() {
           assistant={assistantStatus}
           onToggleSidebar={() => setSidebarOpen(true)}
           title={conversationTitle}
+          statusText={headerStatus}
           subtitle={
             activeChat
               ? "Your conversation is saved automatically."

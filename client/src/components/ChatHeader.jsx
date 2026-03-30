@@ -1,6 +1,12 @@
 import { Menu } from "lucide-react";
 
-export default function ChatHeader({ assistant, onToggleSidebar, title, subtitle }) {
+export default function ChatHeader({
+  assistant,
+  onToggleSidebar,
+  title,
+  subtitle,
+  statusText = "Synced",
+}) {
   return (
     <header className="chat-header">
       <div className="chat-header-left">
@@ -32,7 +38,7 @@ export default function ChatHeader({ assistant, onToggleSidebar, title, subtitle
 
         <div className="chat-header-status">
           <span className="status-indicator" />
-          Synced
+          {statusText}
         </div>
       </div>
     </header>
