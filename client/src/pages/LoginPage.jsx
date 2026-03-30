@@ -15,6 +15,14 @@ export default function LoginPage() {
   const [error, setError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  const updateField = (field, value) => {
+    setForm((current) => ({ ...current, [field]: value }));
+
+    if (error) {
+      setError("");
+    }
+  };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     setError("");
@@ -46,9 +54,7 @@ export default function LoginPage() {
           <input
             type="email"
             value={form.email}
-            onChange={(event) =>
-              setForm((current) => ({ ...current, email: event.target.value }))
-            }
+            onChange={(event) => updateField("email", event.target.value)}
             placeholder="you@example.com"
             autoComplete="email"
             required
@@ -60,9 +66,7 @@ export default function LoginPage() {
           <input
             type="password"
             value={form.password}
-            onChange={(event) =>
-              setForm((current) => ({ ...current, password: event.target.value }))
-            }
+            onChange={(event) => updateField("password", event.target.value)}
             placeholder="Enter your password"
             autoComplete="current-password"
             required
@@ -78,4 +82,3 @@ export default function LoginPage() {
     </AuthLayout>
   );
 }
-
