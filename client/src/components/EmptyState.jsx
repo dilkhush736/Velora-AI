@@ -1,6 +1,12 @@
 import { Sparkles } from "lucide-react";
 
-export default function EmptyState({ hasChat, onNewChat }) {
+const SUGGESTIONS = [
+  "Draft a release note from these commits.",
+  "Explain this error and suggest a fix.",
+  "Turn rough notes into a polished proposal.",
+];
+
+export default function EmptyState({ hasChat, onNewChat, onSuggestion }) {
   return (
     <div className="empty-state">
       <div className="empty-state-icon">
@@ -20,11 +26,17 @@ export default function EmptyState({ hasChat, onNewChat }) {
       ) : null}
 
       <div className="empty-state-suggestions">
-        <span>Draft a release note from these commits.</span>
-        <span>Explain this error and suggest a fix.</span>
-        <span>Turn rough notes into a polished proposal.</span>
+        {SUGGESTIONS.map((suggestion) => (
+          <button
+            key={suggestion}
+            type="button"
+            className="ghost-button empty-state-suggestion"
+            onClick={() => onSuggestion?.(suggestion)}
+          >
+            {suggestion}
+          </button>
+        ))}
       </div>
     </div>
   );
 }
-

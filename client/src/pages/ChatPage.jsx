@@ -310,6 +310,10 @@ export default function ChatPage() {
     : isResponding
       ? "Responding"
       : "Synced";
+  const handleSuggestion = (suggestion) => {
+    setComposerValue(suggestion);
+    setPageError("");
+  };
 
   return (
     <div className="app-shell">
@@ -348,9 +352,13 @@ export default function ChatPage() {
               <LoadingDots label="Loading conversation" />
             </div>
           ) : !activeChat ? (
-            <EmptyState hasChat={false} onNewChat={handleNewChat} />
+            <EmptyState
+              hasChat={false}
+              onNewChat={handleNewChat}
+              onSuggestion={handleSuggestion}
+            />
           ) : activeMessages.length === 0 ? (
-            <EmptyState hasChat onNewChat={handleNewChat} />
+            <EmptyState hasChat onNewChat={handleNewChat} onSuggestion={handleSuggestion} />
           ) : (
             <div className="message-list">
               {activeMessages.map((message, index) => (
