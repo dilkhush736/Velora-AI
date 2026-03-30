@@ -11,6 +11,7 @@ const messageSchema = new mongoose.Schema(
       type: String,
       required: true,
       trim: true,
+      maxlength: 8000,
     },
     createdAt: {
       type: Date,
@@ -34,6 +35,7 @@ const chatSchema = new mongoose.Schema(
       type: String,
       trim: true,
       default: "New conversation",
+      minlength: 1,
       maxlength: 100,
     },
     messages: {
@@ -55,4 +57,3 @@ chatSchema.index({ user: 1, lastMessageAt: -1 });
 const Chat = mongoose.model("Chat", chatSchema);
 
 export default Chat;
-
