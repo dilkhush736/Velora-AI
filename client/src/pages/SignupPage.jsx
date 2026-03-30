@@ -30,7 +30,11 @@ export default function SignupPage() {
     setIsSubmitting(true);
 
     try {
-      await signup(form);
+      await signup({
+        ...form,
+        name: form.name.trim().replace(/\s+/g, " "),
+        email: form.email.trim(),
+      });
       navigate("/app", { replace: true });
     } catch (requestError) {
       setError(getApiErrorMessage(requestError, "Unable to create your account."));
