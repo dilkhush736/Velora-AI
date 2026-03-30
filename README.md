@@ -91,6 +91,15 @@ Client URL: `http://localhost:5173`
 
 API URL: `http://localhost:5000`
 
+## Build the client
+
+```powershell
+cd client
+npm.cmd run build
+```
+
+The production files are written to `client/dist`.
+
 ## Available API routes
 
 ### Auth
