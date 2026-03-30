@@ -1,0 +1,8 @@
+[assistant] Falling back to demo mode. {
+  reason: 'network_error',
+  intent: 'web_dev',
+  name: 'Error',
+  code: undefined,
+  status: undefined,
+  message: 'Connection error.'
+}

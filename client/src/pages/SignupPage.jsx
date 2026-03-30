@@ -1,0 +1,97 @@
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+
+import { getApiErrorMessage } from "../api/apiClient";
+import AuthLayout from "../components/AuthLayout";
+import { useAuth } from "../context/AuthContext";
+
+export default function SignupPage() {
+  const navigate = useNavigate();
+  const { signup } = useAuth();
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
+  const [error, setError] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setError("");
+    setIsSubmitting(true);
+
+    try {
+      await signup(form);
+      navigate("/app", { replace: true });
+    } catch (requestError) {
+      setError(getApiErrorMessage(requestError, "Unable to create your account."));
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  return (
+    <AuthLayout
+      title="Create account"
+      subtitle="Launch a personal AI workspace with persistent chat history."
+      footer={
+        <p>
+          Already have an account? <Link to="/login">Sign in</Link>
+        </p>
+      }
+    >
+      <form className="auth-form" onSubmit={handleSubmit}>
+        <label>
+          <span>Name</span>
+          <input
+            type="text"
+            value={form.name}
+            onChange={(event) =>
+              setForm((current) => ({ ...current, name: event.target.value }))
+            }
+            placeholder="Your name"
+            autoComplete="name"
+            required
+          />
+        </label>
+
+        <label>
+          <span>Email</span>
+          <input
+            type="email"
+            value={form.email}
+            onChange={(event) =>
+              setForm((current) => ({ ...current, email: event.target.value }))
+            }
+            placeholder="you@example.com"
+            autoComplete="email"
+            required
+          />
+        </label>
+
+        <label>
+          <span>Password</span>
+          <input
+            type="password"
+            value={form.password}
+            onChange={(event) =>
+              setForm((current) => ({ ...current, password: event.target.value }))
+            }
+            placeholder="At least 6 characters"
+            autoComplete="new-password"
+            required
+            minLength={6}
+          />
+        </label>
+
+        {error ? <div className="notice notice-error">{error}</div> : null}
+
+        <button className="primary-button auth-submit" disabled={isSubmitting} type="submit">
+          {isSubmitting ? "Creating account..." : "Create account"}
+        </button>
+      </form>
+    </AuthLayout>
+  );
+}
+

@@ -1,0 +1,11 @@
+
+> velora-server@1.0.0 start
+> node src/server.js
+
+MongoDB connected: 127.0.0.1
+Server listening on http://localhost:5000
+[0mGET /api/health [32m200[0m 5.453 ms - 50[0m
+[0mPOST /api/auth/signup [32m201[0m 161.091 ms - 369[0m
+[0mPOST /api/chats [32m201[0m 16.816 ms - 204[0m
+[0mPOST /api/chats/69ca976b0df2ddda9195ca68/messages [31m502[0m 1067.929 ms - 982[0m
+[0mGET /api/chats/69ca976b0df2ddda9195ca68 [32m200[0m 6.010 ms - 359[0m

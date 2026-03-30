@@ -1,0 +1,5 @@
+MongoDB connected: 127.0.0.1
+Server listening on http://localhost:5001
+[0mGET /api/health [32m200[0m 1.693 ms - 50[0m
+[0mPOST /api/auth/signup [32m201[0m 157.897 ms - 364[0m
+[0mPOST /api/auth/login [32m200[0m 101.831 ms - 364[0m
