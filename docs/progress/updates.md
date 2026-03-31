@@ -62,3 +62,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 058: Recorded a small progress note about the local demo mode.
 - Update 059: Recorded a small progress note about the history sidebar.
 - Update 060: Recorded a small progress note about the chat deletion flow.
+- Update 061: Recorded a small progress note about the new chat creation.
