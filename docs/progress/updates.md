@@ -12,3 +12,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 008: Recorded a small progress note about the auth context.
 - Update 009: Recorded a small progress note about the API client setup.
 - Update 010: Recorded a small progress note about the format helpers.
+- Update 011: Recorded a small progress note about the server bootstrap.
