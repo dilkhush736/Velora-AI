@@ -97,3 +97,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 093: Recorded a small progress note about the future backlog.
 - Update 094: Recorded a small progress note about the troubleshooting notes.
 - Update 095: Recorded a small progress note about the developer onboarding.
+- Update 096: Recorded a small progress note about the release notes.
