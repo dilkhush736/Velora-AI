@@ -13,3 +13,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 009: Recorded a small progress note about the API client setup.
 - Update 010: Recorded a small progress note about the format helpers.
 - Update 011: Recorded a small progress note about the server bootstrap.
+- Update 012: Recorded a small progress note about the Express app wiring.
