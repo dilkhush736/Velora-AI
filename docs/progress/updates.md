@@ -21,3 +21,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 017: Recorded a small progress note about the error middleware.
 - Update 018: Recorded a small progress note about the chat model.
 - Update 019: Recorded a small progress note about the user model.
+- Update 020: Recorded a small progress note about the auth routes.
