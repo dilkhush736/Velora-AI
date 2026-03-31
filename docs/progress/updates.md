@@ -67,3 +67,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 063: Recorded a small progress note about the copy button behavior.
 - Update 064: Recorded a small progress note about the scroll behavior.
 - Update 065: Recorded a small progress note about the environment variable usage.
+- Update 066: Recorded a small progress note about the port configuration.
