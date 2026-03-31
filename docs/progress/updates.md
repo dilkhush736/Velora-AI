@@ -73,3 +73,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 069: Recorded a small progress note about the Mongoose models.
 - Update 070: Recorded a small progress note about the React pages.
 - Update 071: Recorded a small progress note about the shared utilities.
+- Update 072: Recorded a small progress note about the documentation tone.
