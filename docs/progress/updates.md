@@ -24,3 +24,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 020: Recorded a small progress note about the auth routes.
 - Update 021: Recorded a small progress note about the chat routes.
 - Update 022: Recorded a small progress note about the assistant service.
+- Update 023: Recorded a small progress note about the demo assistant.
