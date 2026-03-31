@@ -42,3 +42,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 038: Recorded a small progress note about the mobile layout.
 - Update 039: Recorded a small progress note about the desktop layout.
 - Update 040: Recorded a small progress note about the loading states.
+- Update 041: Recorded a small progress note about the error handling.
