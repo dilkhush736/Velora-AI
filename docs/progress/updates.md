@@ -75,3 +75,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 071: Recorded a small progress note about the shared utilities.
 - Update 072: Recorded a small progress note about the documentation tone.
 - Update 073: Recorded a small progress note about the setup clarity.
+- Update 074: Recorded a small progress note about the runbook details.
