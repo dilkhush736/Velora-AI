@@ -10,3 +10,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 006: Recorded a small progress note about the empty state.
 - Update 007: Recorded a small progress note about the sidebar interactions.
 - Update 008: Recorded a small progress note about the auth context.
+- Update 009: Recorded a small progress note about the API client setup.
