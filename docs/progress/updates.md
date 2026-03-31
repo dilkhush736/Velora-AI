@@ -79,3 +79,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 075: Recorded a small progress note about the debug logs hygiene.
 - Update 076: Recorded a small progress note about the production build notes.
 - Update 077: Recorded a small progress note about the package scripts.
+- Update 078: Recorded a small progress note about the dependency boundaries.
