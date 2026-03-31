@@ -30,3 +30,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 026: Recorded a small progress note about the OpenAI service.
 - Update 027: Recorded a small progress note about the async utilities.
 - Update 028: Recorded a small progress note about the token generation.
+- Update 029: Recorded a small progress note about the README setup steps.
