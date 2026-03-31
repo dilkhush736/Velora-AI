@@ -37,3 +37,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 033: Recorded a small progress note about the Vite proxy behavior.
 - Update 034: Recorded a small progress note about the JWT token lifecycle.
 - Update 035: Recorded a small progress note about the Mongo persistence.
+- Update 036: Recorded a small progress note about the Markdown rendering.
