@@ -34,3 +34,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 030: Recorded a small progress note about the environment examples.
 - Update 031: Recorded a small progress note about the build outputs.
 - Update 032: Recorded a small progress note about the development scripts.
+- Update 033: Recorded a small progress note about the Vite proxy behavior.
