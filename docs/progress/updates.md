@@ -39,3 +39,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 035: Recorded a small progress note about the Mongo persistence.
 - Update 036: Recorded a small progress note about the Markdown rendering.
 - Update 037: Recorded a small progress note about the syntax highlighting.
+- Update 038: Recorded a small progress note about the mobile layout.
