@@ -28,3 +28,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 024: Recorded a small progress note about the local knowledge service.
 - Update 025: Recorded a small progress note about the math assistant.
 - Update 026: Recorded a small progress note about the OpenAI service.
+- Update 027: Recorded a small progress note about the async utilities.
