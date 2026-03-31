@@ -17,3 +17,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 013: Recorded a small progress note about the database connection.
 - Update 014: Recorded a small progress note about the auth controller.
 - Update 015: Recorded a small progress note about the chat controller.
+- Update 016: Recorded a small progress note about the auth middleware.
