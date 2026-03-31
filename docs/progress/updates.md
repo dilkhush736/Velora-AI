@@ -18,3 +18,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 014: Recorded a small progress note about the auth controller.
 - Update 015: Recorded a small progress note about the chat controller.
 - Update 016: Recorded a small progress note about the auth middleware.
+- Update 017: Recorded a small progress note about the error middleware.
