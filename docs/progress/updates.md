@@ -85,3 +85,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 081: Recorded a small progress note about the error messages.
 - Update 082: Recorded a small progress note about the API fallback paths.
 - Update 083: Recorded a small progress note about the response timing notes.
+- Update 084: Recorded a small progress note about the prompt handling.
