@@ -59,3 +59,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 055: Recorded a small progress note about the folder structure.
 - Update 056: Recorded a small progress note about the API route surface.
 - Update 057: Recorded a small progress note about the deployment assumptions.
+- Update 058: Recorded a small progress note about the local demo mode.
