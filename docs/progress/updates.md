@@ -91,3 +91,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 087: Recorded a small progress note about the server routing.
 - Update 088: Recorded a small progress note about the modular file layout.
 - Update 089: Recorded a small progress note about the project overview.
+- Update 090: Recorded a small progress note about the feature list.
