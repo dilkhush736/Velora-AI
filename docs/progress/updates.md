@@ -83,3 +83,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 079: Recorded a small progress note about the frontend state flow.
 - Update 080: Recorded a small progress note about the backend service boundaries.
 - Update 081: Recorded a small progress note about the error messages.
+- Update 082: Recorded a small progress note about the API fallback paths.
