@@ -100,3 +100,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 096: Recorded a small progress note about the release notes.
 - Update 097: Recorded a small progress note about the repo hygiene.
 - Update 098: Recorded a small progress note about the safe commit cadence.
+- Update 099: Recorded a small progress note about the change log structure.
