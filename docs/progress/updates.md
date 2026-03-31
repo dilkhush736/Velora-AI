@@ -71,3 +71,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 067: Recorded a small progress note about the client entry point.
 - Update 068: Recorded a small progress note about the server entry point.
 - Update 069: Recorded a small progress note about the Mongoose models.
+- Update 070: Recorded a small progress note about the React pages.
