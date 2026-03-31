@@ -32,3 +32,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 028: Recorded a small progress note about the token generation.
 - Update 029: Recorded a small progress note about the README setup steps.
 - Update 030: Recorded a small progress note about the environment examples.
+- Update 031: Recorded a small progress note about the build outputs.
