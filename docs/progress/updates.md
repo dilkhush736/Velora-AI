@@ -87,3 +87,4 @@ This file records 100 intentionally small, repo-safe documentation updates.
 - Update 083: Recorded a small progress note about the response timing notes.
 - Update 084: Recorded a small progress note about the prompt handling.
 - Update 085: Recorded a small progress note about the request auth headers.
+- Update 086: Recorded a small progress note about the client routing.
