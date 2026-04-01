@@ -118,3 +118,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 114: Recorded pass 2 progress note about the auth controller.
 - Update 115: Recorded pass 2 progress note about the chat controller.
 - Update 116: Recorded pass 2 progress note about the auth middleware.
+- Update 117: Recorded pass 2 progress note about the error middleware.
