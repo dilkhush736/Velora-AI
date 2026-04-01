@@ -125,3 +125,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 121: Recorded pass 2 progress note about the chat routes.
 - Update 122: Recorded pass 2 progress note about the assistant service.
 - Update 123: Recorded pass 2 progress note about the demo assistant.
+- Update 124: Recorded pass 2 progress note about the local knowledge service.
