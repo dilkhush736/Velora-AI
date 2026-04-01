@@ -165,3 +165,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 161: Recorded pass 2 progress note about the new chat creation.
 - Update 162: Recorded pass 2 progress note about the message submit path.
 - Update 163: Recorded pass 2 progress note about the copy button behavior.
+- Update 164: Recorded pass 2 progress note about the scroll behavior.
