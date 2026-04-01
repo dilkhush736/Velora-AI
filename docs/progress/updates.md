@@ -128,3 +128,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 124: Recorded pass 2 progress note about the local knowledge service.
 - Update 125: Recorded pass 2 progress note about the math assistant.
 - Update 126: Recorded pass 2 progress note about the OpenAI service.
+- Update 127: Recorded pass 2 progress note about the async utilities.
