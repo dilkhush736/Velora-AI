@@ -121,3 +121,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 117: Recorded pass 2 progress note about the error middleware.
 - Update 118: Recorded pass 2 progress note about the chat model.
 - Update 119: Recorded pass 2 progress note about the user model.
+- Update 120: Recorded pass 2 progress note about the auth routes.
