@@ -139,3 +139,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 135: Recorded pass 2 progress note about the Mongo persistence.
 - Update 136: Recorded pass 2 progress note about the Markdown rendering.
 - Update 137: Recorded pass 2 progress note about the syntax highlighting.
+- Update 138: Recorded pass 2 progress note about the mobile layout.
