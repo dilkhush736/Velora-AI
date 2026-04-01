@@ -188,3 +188,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 184: Recorded pass 2 progress note about the prompt handling.
 - Update 185: Recorded pass 2 progress note about the request auth headers.
 - Update 186: Recorded pass 2 progress note about the client routing.
+- Update 187: Recorded pass 2 progress note about the server routing.
