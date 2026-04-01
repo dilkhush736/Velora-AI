@@ -169,3 +169,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 165: Recorded pass 2 progress note about the environment variable usage.
 - Update 166: Recorded pass 2 progress note about the port configuration.
 - Update 167: Recorded pass 2 progress note about the client entry point.
+- Update 168: Recorded pass 2 progress note about the server entry point.
