@@ -133,3 +133,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 129: Recorded pass 2 progress note about the README setup steps.
 - Update 130: Recorded pass 2 progress note about the environment examples.
 - Update 131: Recorded pass 2 progress note about the build outputs.
+- Update 132: Recorded pass 2 progress note about the development scripts.
