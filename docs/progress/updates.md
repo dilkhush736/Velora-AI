@@ -150,3 +150,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 146: Recorded pass 2 progress note about the chat history loading.
 - Update 147: Recorded pass 2 progress note about the message persistence.
 - Update 148: Recorded pass 2 progress note about the AI fallback handling.
+- Update 149: Recorded pass 2 progress note about the logout behavior.
