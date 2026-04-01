@@ -134,3 +134,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 130: Recorded pass 2 progress note about the environment examples.
 - Update 131: Recorded pass 2 progress note about the build outputs.
 - Update 132: Recorded pass 2 progress note about the development scripts.
+- Update 133: Recorded pass 2 progress note about the Vite proxy behavior.
