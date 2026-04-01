@@ -151,3 +151,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 147: Recorded pass 2 progress note about the message persistence.
 - Update 148: Recorded pass 2 progress note about the AI fallback handling.
 - Update 149: Recorded pass 2 progress note about the logout behavior.
+- Update 150: Recorded pass 2 progress note about the signup flow.
