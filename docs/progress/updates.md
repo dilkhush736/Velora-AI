@@ -148,3 +148,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 144: Recorded pass 2 progress note about the session recovery.
 - Update 145: Recorded pass 2 progress note about the route protection.
 - Update 146: Recorded pass 2 progress note about the chat history loading.
+- Update 147: Recorded pass 2 progress note about the message persistence.
