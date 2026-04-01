@@ -172,3 +172,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 168: Recorded pass 2 progress note about the server entry point.
 - Update 169: Recorded pass 2 progress note about the Mongoose models.
 - Update 170: Recorded pass 2 progress note about the React pages.
+- Update 171: Recorded pass 2 progress note about the shared utilities.
