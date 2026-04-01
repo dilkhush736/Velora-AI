@@ -186,3 +186,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 182: Recorded pass 2 progress note about the API fallback paths.
 - Update 183: Recorded pass 2 progress note about the response timing notes.
 - Update 184: Recorded pass 2 progress note about the prompt handling.
+- Update 185: Recorded pass 2 progress note about the request auth headers.
