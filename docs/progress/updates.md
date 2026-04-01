@@ -197,3 +197,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 193: Recorded pass 2 progress note about the future backlog.
 - Update 194: Recorded pass 2 progress note about the troubleshooting notes.
 - Update 195: Recorded pass 2 progress note about the developer onboarding.
+- Update 196: Recorded pass 2 progress note about the release notes.
