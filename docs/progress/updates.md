@@ -175,3 +175,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 171: Recorded pass 2 progress note about the shared utilities.
 - Update 172: Recorded pass 2 progress note about the documentation tone.
 - Update 173: Recorded pass 2 progress note about the setup clarity.
+- Update 174: Recorded pass 2 progress note about the runbook details.
