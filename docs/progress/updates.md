@@ -179,3 +179,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 175: Recorded pass 2 progress note about the debug logs hygiene.
 - Update 176: Recorded pass 2 progress note about the production build notes.
 - Update 177: Recorded pass 2 progress note about the package scripts.
+- Update 178: Recorded pass 2 progress note about the dependency boundaries.
