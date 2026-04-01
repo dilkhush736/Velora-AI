@@ -1,3 +1,8 @@
+param(
+  [ValidateRange(1, 500)]
+  [int]$Count = 100
+)
+
 $ErrorActionPreference = 'Stop'
 
 $repoRoot = Resolve-Path (Join-Path $PSScriptRoot '..')
@@ -19,7 +24,7 @@ if (-not (Test-Path $ledgerPath)) {
   @(
     '# Progress Updates'
     ''
-    'This file records 100 intentionally small, repo-safe documentation updates.'
+    'This file records intentionally small, repo-safe documentation updates.'
     ''
   ) | Set-Content -Path $ledgerPath -Encoding utf8
 }
@@ -128,31 +133,40 @@ $areas = @(
   'documentation coverage'
 )
 
-if ($areas.Count -ne 100) {
-  throw "Expected 100 update areas, found $($areas.Count)."
-}
-
 $existingCount = 0
 
 if (Test-Path $ledgerPath) {
   $existingCount = (Select-String -Path $ledgerPath -Pattern '^- Update \d{3}:' | Measure-Object).Count
 }
 
-if ($existingCount -ge $areas.Count) {
-  Write-Host 'No pending updates. The ledger already contains 100 entries.'
+if ($existingCount -gt 0) {
+  $ledger = Get-Content -Path $ledgerPath
+
+  if ($ledger.Count -ge 3 -and $ledger[2] -eq 'This file records 100 intentionally small, repo-safe documentation updates.') {
+    $ledger[2] = 'This file records intentionally small, repo-safe documentation updates.'
+    Set-Content -Path $ledgerPath -Value $ledger -Encoding utf8
+  }
+}
+
+$targetCount = $existingCount + $Count
+
+if ($Count -le 0) {
+  Write-Host 'No pending updates. The requested count is zero.'
   exit 0
 }
 
-for ($i = $existingCount; $i -lt $areas.Count; $i++) {
+for ($i = $existingCount; $i -lt $targetCount; $i++) {
   $updateNumber = $i + 1
-  $line = "- Update {0:D3}: Recorded a small progress note about the {1}." -f $updateNumber, $areas[$i]
+  $area = $areas[$i % $areas.Count]
+  $passNumber = [math]::Floor($i / $areas.Count) + 1
+  $line = "- Update {0:D3}: Recorded pass {1} progress note about the {2}." -f $updateNumber, $passNumber, $area
 
   Add-Content -Path $ledgerPath -Value $line -Encoding utf8
-  Write-Host ("Applying update {0:D3}/100" -f $updateNumber)
+  Write-Host ("Applying update {0:D3}/{1:D3}" -f $updateNumber, $targetCount)
 
   git add .
   git commit -m ("docs: add progress update {0:D3}" -f $updateNumber)
   git push origin main
 }
 
-Write-Host 'Completed 100 small updates.'
+Write-Host ("Completed {0} small updates." -f $Count)

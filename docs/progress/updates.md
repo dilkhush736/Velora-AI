@@ -1,104 +1,104 @@
 # Progress Updates
 
-This file records 100 intentionally small, repo-safe documentation updates.
+This file records intentionally small, repo-safe documentation updates.
 
-- Update 001: Recorded a small progress note about the client app shell.
-- Update 002: Recorded a small progress note about the client auth flow.
-- Update 003: Recorded a small progress note about the chat composer.
-- Update 004: Recorded a small progress note about the chat header.
-- Update 005: Recorded a small progress note about the chat message renderer.
-- Update 006: Recorded a small progress note about the empty state.
-- Update 007: Recorded a small progress note about the sidebar interactions.
-- Update 008: Recorded a small progress note about the auth context.
-- Update 009: Recorded a small progress note about the API client setup.
-- Update 010: Recorded a small progress note about the format helpers.
-- Update 011: Recorded a small progress note about the server bootstrap.
-- Update 012: Recorded a small progress note about the Express app wiring.
-- Update 013: Recorded a small progress note about the database connection.
-- Update 014: Recorded a small progress note about the auth controller.
-- Update 015: Recorded a small progress note about the chat controller.
-- Update 016: Recorded a small progress note about the auth middleware.
-- Update 017: Recorded a small progress note about the error middleware.
-- Update 018: Recorded a small progress note about the chat model.
-- Update 019: Recorded a small progress note about the user model.
-- Update 020: Recorded a small progress note about the auth routes.
-- Update 021: Recorded a small progress note about the chat routes.
-- Update 022: Recorded a small progress note about the assistant service.
-- Update 023: Recorded a small progress note about the demo assistant.
-- Update 024: Recorded a small progress note about the local knowledge service.
-- Update 025: Recorded a small progress note about the math assistant.
-- Update 026: Recorded a small progress note about the OpenAI service.
-- Update 027: Recorded a small progress note about the async utilities.
-- Update 028: Recorded a small progress note about the token generation.
-- Update 029: Recorded a small progress note about the README setup steps.
-- Update 030: Recorded a small progress note about the environment examples.
-- Update 031: Recorded a small progress note about the build outputs.
-- Update 032: Recorded a small progress note about the development scripts.
-- Update 033: Recorded a small progress note about the Vite proxy behavior.
-- Update 034: Recorded a small progress note about the JWT token lifecycle.
-- Update 035: Recorded a small progress note about the Mongo persistence.
-- Update 036: Recorded a small progress note about the Markdown rendering.
-- Update 037: Recorded a small progress note about the syntax highlighting.
-- Update 038: Recorded a small progress note about the mobile layout.
-- Update 039: Recorded a small progress note about the desktop layout.
-- Update 040: Recorded a small progress note about the loading states.
-- Update 041: Recorded a small progress note about the error handling.
-- Update 042: Recorded a small progress note about the request validation.
-- Update 043: Recorded a small progress note about the response formatting.
-- Update 044: Recorded a small progress note about the session recovery.
-- Update 045: Recorded a small progress note about the route protection.
-- Update 046: Recorded a small progress note about the chat history loading.
-- Update 047: Recorded a small progress note about the message persistence.
-- Update 048: Recorded a small progress note about the AI fallback handling.
-- Update 049: Recorded a small progress note about the logout behavior.
-- Update 050: Recorded a small progress note about the signup flow.
-- Update 051: Recorded a small progress note about the login flow.
-- Update 052: Recorded a small progress note about the form feedback.
-- Update 053: Recorded a small progress note about the placeholder copy.
-- Update 054: Recorded a small progress note about the component naming.
-- Update 055: Recorded a small progress note about the folder structure.
-- Update 056: Recorded a small progress note about the API route surface.
-- Update 057: Recorded a small progress note about the deployment assumptions.
-- Update 058: Recorded a small progress note about the local demo mode.
-- Update 059: Recorded a small progress note about the history sidebar.
-- Update 060: Recorded a small progress note about the chat deletion flow.
-- Update 061: Recorded a small progress note about the new chat creation.
-- Update 062: Recorded a small progress note about the message submit path.
-- Update 063: Recorded a small progress note about the copy button behavior.
-- Update 064: Recorded a small progress note about the scroll behavior.
-- Update 065: Recorded a small progress note about the environment variable usage.
-- Update 066: Recorded a small progress note about the port configuration.
-- Update 067: Recorded a small progress note about the client entry point.
-- Update 068: Recorded a small progress note about the server entry point.
-- Update 069: Recorded a small progress note about the Mongoose models.
-- Update 070: Recorded a small progress note about the React pages.
-- Update 071: Recorded a small progress note about the shared utilities.
-- Update 072: Recorded a small progress note about the documentation tone.
-- Update 073: Recorded a small progress note about the setup clarity.
-- Update 074: Recorded a small progress note about the runbook details.
-- Update 075: Recorded a small progress note about the debug logs hygiene.
-- Update 076: Recorded a small progress note about the production build notes.
-- Update 077: Recorded a small progress note about the package scripts.
-- Update 078: Recorded a small progress note about the dependency boundaries.
-- Update 079: Recorded a small progress note about the frontend state flow.
-- Update 080: Recorded a small progress note about the backend service boundaries.
-- Update 081: Recorded a small progress note about the error messages.
-- Update 082: Recorded a small progress note about the API fallback paths.
-- Update 083: Recorded a small progress note about the response timing notes.
-- Update 084: Recorded a small progress note about the prompt handling.
-- Update 085: Recorded a small progress note about the request auth headers.
-- Update 086: Recorded a small progress note about the client routing.
-- Update 087: Recorded a small progress note about the server routing.
-- Update 088: Recorded a small progress note about the modular file layout.
-- Update 089: Recorded a small progress note about the project overview.
-- Update 090: Recorded a small progress note about the feature list.
-- Update 091: Recorded a small progress note about the testing gaps.
-- Update 092: Recorded a small progress note about the maintenance checklist.
-- Update 093: Recorded a small progress note about the future backlog.
-- Update 094: Recorded a small progress note about the troubleshooting notes.
-- Update 095: Recorded a small progress note about the developer onboarding.
-- Update 096: Recorded a small progress note about the release notes.
-- Update 097: Recorded a small progress note about the repo hygiene.
-- Update 098: Recorded a small progress note about the safe commit cadence.
-- Update 099: Recorded a small progress note about the change log structure.
-- Update 100: Recorded a small progress note about the documentation coverage.
+- Update 001: Recorded pass 1 progress note about the client app shell.
+- Update 002: Recorded pass 1 progress note about the client auth flow.
+- Update 003: Recorded pass 1 progress note about the chat composer.
+- Update 004: Recorded pass 1 progress note about the chat header.
+- Update 005: Recorded pass 1 progress note about the chat message renderer.
+- Update 006: Recorded pass 1 progress note about the empty state.
+- Update 007: Recorded pass 1 progress note about the sidebar interactions.
+- Update 008: Recorded pass 1 progress note about the auth context.
+- Update 009: Recorded pass 1 progress note about the API client setup.
+- Update 010: Recorded pass 1 progress note about the format helpers.
+- Update 011: Recorded pass 1 progress note about the server bootstrap.
+- Update 012: Recorded pass 1 progress note about the Express app wiring.
+- Update 013: Recorded pass 1 progress note about the database connection.
+- Update 014: Recorded pass 1 progress note about the auth controller.
+- Update 015: Recorded pass 1 progress note about the chat controller.
+- Update 016: Recorded pass 1 progress note about the auth middleware.
+- Update 017: Recorded pass 1 progress note about the error middleware.
+- Update 018: Recorded pass 1 progress note about the chat model.
+- Update 019: Recorded pass 1 progress note about the user model.
+- Update 020: Recorded pass 1 progress note about the auth routes.
+- Update 021: Recorded pass 1 progress note about the chat routes.
+- Update 022: Recorded pass 1 progress note about the assistant service.
+- Update 023: Recorded pass 1 progress note about the demo assistant.
+- Update 024: Recorded pass 1 progress note about the local knowledge service.
+- Update 025: Recorded pass 1 progress note about the math assistant.
+- Update 026: Recorded pass 1 progress note about the OpenAI service.
+- Update 027: Recorded pass 1 progress note about the async utilities.
+- Update 028: Recorded pass 1 progress note about the token generation.
+- Update 029: Recorded pass 1 progress note about the README setup steps.
+- Update 030: Recorded pass 1 progress note about the environment examples.
+- Update 031: Recorded pass 1 progress note about the build outputs.
+- Update 032: Recorded pass 1 progress note about the development scripts.
+- Update 033: Recorded pass 1 progress note about the Vite proxy behavior.
+- Update 034: Recorded pass 1 progress note about the JWT token lifecycle.
+- Update 035: Recorded pass 1 progress note about the Mongo persistence.
+- Update 036: Recorded pass 1 progress note about the Markdown rendering.
+- Update 037: Recorded pass 1 progress note about the syntax highlighting.
+- Update 038: Recorded pass 1 progress note about the mobile layout.
+- Update 039: Recorded pass 1 progress note about the desktop layout.
+- Update 040: Recorded pass 1 progress note about the loading states.
+- Update 041: Recorded pass 1 progress note about the error handling.
+- Update 042: Recorded pass 1 progress note about the request validation.
+- Update 043: Recorded pass 1 progress note about the response formatting.
+- Update 044: Recorded pass 1 progress note about the session recovery.
+- Update 045: Recorded pass 1 progress note about the route protection.
+- Update 046: Recorded pass 1 progress note about the chat history loading.
+- Update 047: Recorded pass 1 progress note about the message persistence.
+- Update 048: Recorded pass 1 progress note about the AI fallback handling.
+- Update 049: Recorded pass 1 progress note about the logout behavior.
+- Update 050: Recorded pass 1 progress note about the signup flow.
+- Update 051: Recorded pass 1 progress note about the login flow.
+- Update 052: Recorded pass 1 progress note about the form feedback.
+- Update 053: Recorded pass 1 progress note about the placeholder copy.
+- Update 054: Recorded pass 1 progress note about the component naming.
+- Update 055: Recorded pass 1 progress note about the folder structure.
+- Update 056: Recorded pass 1 progress note about the API route surface.
+- Update 057: Recorded pass 1 progress note about the deployment assumptions.
+- Update 058: Recorded pass 1 progress note about the local demo mode.
+- Update 059: Recorded pass 1 progress note about the history sidebar.
+- Update 060: Recorded pass 1 progress note about the chat deletion flow.
+- Update 061: Recorded pass 1 progress note about the new chat creation.
+- Update 062: Recorded pass 1 progress note about the message submit path.
+- Update 063: Recorded pass 1 progress note about the copy button behavior.
+- Update 064: Recorded pass 1 progress note about the scroll behavior.
+- Update 065: Recorded pass 1 progress note about the environment variable usage.
+- Update 066: Recorded pass 1 progress note about the port configuration.
+- Update 067: Recorded pass 1 progress note about the client entry point.
+- Update 068: Recorded pass 1 progress note about the server entry point.
+- Update 069: Recorded pass 1 progress note about the Mongoose models.
+- Update 070: Recorded pass 1 progress note about the React pages.
+- Update 071: Recorded pass 1 progress note about the shared utilities.
+- Update 072: Recorded pass 1 progress note about the documentation tone.
+- Update 073: Recorded pass 1 progress note about the setup clarity.
+- Update 074: Recorded pass 1 progress note about the runbook details.
+- Update 075: Recorded pass 1 progress note about the debug logs hygiene.
+- Update 076: Recorded pass 1 progress note about the production build notes.
+- Update 077: Recorded pass 1 progress note about the package scripts.
+- Update 078: Recorded pass 1 progress note about the dependency boundaries.
+- Update 079: Recorded pass 1 progress note about the frontend state flow.
+- Update 080: Recorded pass 1 progress note about the backend service boundaries.
+- Update 081: Recorded pass 1 progress note about the error messages.
+- Update 082: Recorded pass 1 progress note about the API fallback paths.
+- Update 083: Recorded pass 1 progress note about the response timing notes.
+- Update 084: Recorded pass 1 progress note about the prompt handling.
+- Update 085: Recorded pass 1 progress note about the request auth headers.
+- Update 086: Recorded pass 1 progress note about the client routing.
+- Update 087: Recorded pass 1 progress note about the server routing.
+- Update 088: Recorded pass 1 progress note about the modular file layout.
+- Update 089: Recorded pass 1 progress note about the project overview.
+- Update 090: Recorded pass 1 progress note about the feature list.
+- Update 091: Recorded pass 1 progress note about the testing gaps.
+- Update 092: Recorded pass 1 progress note about the maintenance checklist.
+- Update 093: Recorded pass 1 progress note about the future backlog.
+- Update 094: Recorded pass 1 progress note about the troubleshooting notes.
+- Update 095: Recorded pass 1 progress note about the developer onboarding.
+- Update 096: Recorded pass 1 progress note about the release notes.
+- Update 097: Recorded pass 1 progress note about the repo hygiene.
+- Update 098: Recorded pass 1 progress note about the safe commit cadence.
+- Update 099: Recorded pass 1 progress note about the change log structure.
+- Update 100: Recorded pass 1 progress note about the documentation coverage.
