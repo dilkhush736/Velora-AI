@@ -160,3 +160,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 156: Recorded pass 2 progress note about the API route surface.
 - Update 157: Recorded pass 2 progress note about the deployment assumptions.
 - Update 158: Recorded pass 2 progress note about the local demo mode.
+- Update 159: Recorded pass 2 progress note about the history sidebar.
