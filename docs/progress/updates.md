@@ -111,3 +111,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 107: Recorded pass 2 progress note about the sidebar interactions.
 - Update 108: Recorded pass 2 progress note about the auth context.
 - Update 109: Recorded pass 2 progress note about the API client setup.
+- Update 110: Recorded pass 2 progress note about the format helpers.
