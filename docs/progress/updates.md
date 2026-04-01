@@ -114,3 +114,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 110: Recorded pass 2 progress note about the format helpers.
 - Update 111: Recorded pass 2 progress note about the server bootstrap.
 - Update 112: Recorded pass 2 progress note about the Express app wiring.
+- Update 113: Recorded pass 2 progress note about the database connection.
