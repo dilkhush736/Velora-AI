@@ -109,3 +109,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 105: Recorded pass 2 progress note about the chat message renderer.
 - Update 106: Recorded pass 2 progress note about the empty state.
 - Update 107: Recorded pass 2 progress note about the sidebar interactions.
+- Update 108: Recorded pass 2 progress note about the auth context.
