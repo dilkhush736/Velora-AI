@@ -131,3 +131,4 @@ This file records intentionally small, repo-safe documentation updates.
 - Update 127: Recorded pass 2 progress note about the async utilities.
 - Update 128: Recorded pass 2 progress note about the token generation.
 - Update 129: Recorded pass 2 progress note about the README setup steps.
+- Update 130: Recorded pass 2 progress note about the environment examples.
