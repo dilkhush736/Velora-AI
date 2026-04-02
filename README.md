@@ -1,4 +1,5 @@
 # Velora AI Chat App
+doc: update:31
 
 Velora is a full-stack AI chatbot web app built with a React + Vite client and a Node.js + Express API. It includes JWT authentication, MongoDB chat persistence, OpenAI integration, responsive dark-mode UI, Markdown rendering, syntax-highlighted code blocks, and recent conversation history.
 
